@@ -27,6 +27,10 @@ import $ from 'jquery';
 
 prestashop.selectors = {
   quantityWanted: '#quantity_wanted',
+  address: {
+    country: '.js-country',
+    form: '.js-address-form',
+  },
   product: {
     imageContainer:
       // eslint-disable-next-line
