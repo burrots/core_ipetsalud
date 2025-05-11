@@ -51,7 +51,7 @@ module.exports = (env, argv) => {
     externals: {
       prestashop: 'prestashop',
     },
-    devtool: mode === 'production' ? false : 'source-map',
+    devtool: mode === 'production' ? false : 'eval-source-map',
     optimization: {
       minimize: true,
       minimizer: [new TerserPlugin({
