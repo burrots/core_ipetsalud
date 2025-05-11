@@ -22,8 +22,6 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
  */
-__webpack_public_path__ = window.prestashop.core_js_public_path;
-
 import $ from 'jquery';
 
 import './migrate-mute';
@@ -32,15 +30,17 @@ import 'jquery.browser';
 import '@prestashop-core/jquery.live-polyfill';
 
 import './selectors';
+import './address';
 import './cart';
 import './checkout';
 import './facets';
 import './listing';
 import './product';
-import './address';
 
 import {psShowHide} from './common';
 import initEmailFields from './email-idn';
+
+__webpack_public_path__ = window.prestashop.core_js_public_path;
 
 window.$ = $;
 window.jQuery = $;
